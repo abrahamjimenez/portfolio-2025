@@ -225,7 +225,7 @@ const metadata = {
     }}
     callToAction={{
       target: '_blank',
-      text: 'Go to the project',
+      text: 'View the website',
       icon: 'tabler:chevron-right',
       href: 'https://www.subitt.io/customer/home',
     }}
@@ -264,7 +264,7 @@ const metadata = {
     }}
     callToAction={{
       target: '_blank',
-      text: 'View the project',
+      text: 'View the website',
       icon: 'tabler:chevron-right',
       href: 'https://www.laperlajewelry.com/',
     }}
@@ -280,5 +280,81 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <!-- todo Beehance Post-->
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Description:',
+        description:
+          'Recognized with 2nd place at the BYU-I 2023 Hackathon for resolving intricate DOM bugs and employing advanced CSS troubleshooting techniques. Delivered an optimized and seamless user experience, tailored for diverse audiences, that showcased innovative design and functionality.',
+      },
+      {
+        title: 'Role:',
+        description:
+          'Led debugging efforts to resolve complex DOM issues, ensuring cross-browser compatibility and smooth functionality. Collaborated with a team to enhance user interfaces and implement creative solutions, demonstrating technical expertise and a commitment to teamwork.',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/heartset.png',
+      alt: 'HeartSet Hackathon Project Preview',
+    }}
+    callToAction={{
+      target: '_blank',
+      text: 'View the project',
+      icon: 'tabler:chevron-right',
+      href: 'https://heartset.netlify.app/',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Project 3: <br /><span class="text-2xl">HeartSet Hackathon Project</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Description:',
+        description:
+          'Developed "Abraham\'s Shop," an innovative e-commerce platform using the MERN stack. Integrated seamless PayPal functionality and secure routing to enhance the shopping experience while ensuring data safety. Delivered a dynamic and user-friendly site that meets modern e-commerce standards.',
+      },
+      {
+        title: 'Role:',
+        description:
+          'Built the platform’s core architecture, implemented robust admin capabilities, and optimized secure routes. Focused on creating a seamless payment integration and intuitive user interface, showcasing a proactive approach to full-stack web development.',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/abrahams-shop.png',
+      alt: 'Abraham’s Shop Project Preview',
+    }}
+    callToAction={{
+      target: '_blank',
+      text: 'View the project',
+      icon: 'tabler:chevron-right',
+      href: 'https://proshop-ku28.onrender.com/',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Project 4: <br /><span class="text-2xl">Abraham’s Shop E-Commerce Platform</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
 </Layout>
