@@ -1,0 +1,282 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Content from '~/components/widgets/Content.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Steps from '~/components/widgets/Steps.astro';
+
+const metadata = {
+  title: 'Personal Homepage Demo',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="announcement"></Fragment>
+  <Fragment slot="header">
+    <Header
+      links={[
+        { text: 'Home', href: '#' },
+        { text: 'About', href: '#about' },
+        { text: 'Resume', href: '#resume' },
+        { text: 'Porfolio', href: '#portfolio' },
+      ]}
+      isSticky
+      showToggleTheme
+    />
+  </Fragment>
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero id="hero" title="Abraham Jimenez" tagline="Full Stack Developer">
+    <Fragment slot="subtitle">
+      I'm a Web Developer passionate about crafting seamless online experiences. With over 3 years of experience in
+      e-commerce development and a knack for optimizing digital solutions, I bridge the gap between business needs and
+      user-centric design. From synchronizing complex inventories to building dynamic dashboards, I transform ideas into
+      functional, impactful realities.
+    </Fragment>
+  </Hero>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    id="about"
+    columns={3}
+    items={[
+      {
+        icon: 'tabler:brand-github',
+        callToAction: {
+          target: '_blank',
+          text: 'Github',
+          href: 'https://github.com/abrahamjimenez',
+        },
+      },
+      {
+        icon: 'tabler:brand-linkedin',
+        callToAction: {
+          target: '_blank',
+          text: 'LinkedIn',
+          href: 'https://www.linkedin.com/in/abrahamjimenezromo/',
+        },
+      },
+      {
+        icon: 'tabler:brand-behance',
+        callToAction: {
+          target: '_blank',
+          text: 'Behance',
+          href: 'https://www.behance.net/abrahamjimenezromo',
+        },
+      },
+    ]}
+    image={{
+      src: '~/assets/images/abraham.png',
+      alt: 'Colorful Image',
+      loading: 'eager',
+    }}
+  >
+    <Fragment slot="content">
+      <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">About me</h2>
+      <p>
+        Welcome to my journey in web development! I love taking ideas and turning them into functional, user-friendly
+        online experiences. Whether it’s building e-commerce platforms or creating tools that make life easier, I’m all
+        about making things work—and look good while they’re at it.
+      </p>
+      <br />
+      <p>
+        I get my inspiration from solving real-world problems and learning something new every day. When I’m not coding,
+        I’m probably geeking out over tech trends or brainstorming ways to make digital spaces more accessible and
+        effective.
+      </p>
+      <br />
+      <p>If you want to check out what I’ve been working on, let’s connect:</p>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    id="resume"
+    title="Work experience"
+    items={[
+      {
+        title:
+          'Ecommerce Web Developer <br /> <span class="font-normal">La Perla Jewelry, Pasco, WA</span> <br /> <span class="text-sm font-normal">Oct 2021 - Present</span>',
+        description: `Updated online store inventory with accurate details for hundreds of jewelry items.
+ <br /> Improved website SEO and integrated Facebook Marketplace to boost traffic.
+ <br /> Balanced online store management with in-store customer service during peak hours.
+`,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'Full Stack Developer <br /> <span class="font-normal">Subitt, Rexburg, ID</span> <br /> <span class="text-sm font-normal">Apr 2024 - Jul 2024</span>',
+        description: `Collaborated on a Trello board to organize routes, data, and permissions for a new administrative dashboard.
+<br /> Designed a user-friendly admin dashboard to display company and customer data.
+<br /> Organized routes, data, and permissions via Trello for efficient collaboration.
+<br /> Implemented dynamic graphs using the "Recharts" npm library to visualize business trends.
+`,
+        icon: 'tabler:briefcase',
+      },
+    ]}
+    classes={{ container: 'max-w-3xl' }}
+  />
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    id="resume"
+    title="Education"
+    items={[
+      {
+        title: `Bachelor's Degree in Web Design and Development
+<br /> <span class="font-normal">Brigham Young University - Idaho </span>
+<br /> <span class="text-sm font-normal">2022 - Present</span>
+`,
+        icon: 'tabler:school',
+      },
+    ]}
+    classes={{ container: 'max-w-3xl' }}
+  />
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="Skills"
+    subtitle="Discover the proficiencies that empower me to build dynamic and user-friendly web experiences."
+    columns={3}
+    defaultIcon="tabler:point-filled"
+    items={[
+      {
+        title: 'Web Development',
+        description:
+          'Proficient in building responsive and interactive websites using modern web technologies such as HTML, CSS, JavaScript, and frameworks like Next.js and React.',
+      },
+      {
+        title: 'Frontend Development',
+        description:
+          'Skilled in creating intuitive user interfaces with a focus on usability, accessibility, and performance optimization.',
+      },
+      {
+        title: 'Backend Development',
+        description:
+          'Experienced with server-side programming using Node.js, Express, and working with databases like PostgreSQL and MongoDB.',
+      },
+      {
+        title: 'Version Control',
+        description: 'Proficient in using Git and GitHub for version control and collaborative development.',
+      },
+      {
+        title: 'API Integration',
+        description: 'Skilled in integrating third-party APIs and creating RESTful APIs to enhance web functionality.',
+      },
+      {
+        title: 'Responsive Design',
+        description: 'Expert in creating mobile-first, responsive layouts using CSS frameworks like Tailwind CSS.',
+      },
+      {
+        title: 'JavaScript Frameworks',
+        description:
+          'Proficient in using JavaScript frameworks like Next.js and React to build interactive, scalable web applications.',
+      },
+      {
+        title: 'Web Performance Optimization',
+        description:
+          'Knowledgeable in optimizing web performance to ensure fast loading times and smooth user experiences.',
+      },
+      {
+        title: 'Problem Solving',
+        description:
+          'Strong analytical skills for troubleshooting issues, debugging code, and finding efficient solutions.',
+      },
+      {
+        title: 'Collaboration and Communication',
+        description:
+          'Experienced in working within agile teams, collaborating with designers, and communicating technical concepts clearly.',
+      },
+    ]}
+  />
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    id="portfolio"
+    title="Building immersive web experiences"
+    subtitle="Explore my web development journey, where creativity and technology intersect. Dive into my portfolio to see how I craft dynamic, user-friendly websites and applications."
+    isReversed
+    items={[
+      {
+        title: 'Description:',
+        description:
+          "Managed the e-commerce website for Joyeria La Perla, focusing on synchronizing in-store and online inventory for jewelry items. Ensured accurate product details, stock numbers, and descriptions, enhancing the online store's reliability.",
+      },
+      {
+        title: 'Role:',
+        description:
+          'Handled the inventory synchronization, optimized the site’s SEO for better local reach, and integrated Facebook Marketplace to boost traffic. Assisted with customer service during peak times to ensure smooth operations.',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/laperlajewelry.webp',
+      alt: 'E-commerce Website',
+    }}
+    callToAction={{
+      target: '_blank',
+      text: 'View the project',
+      icon: 'tabler:chevron-right',
+      href: 'https://www.laperlajewelry.com/',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Project 1: <br /><span class="text-2xl">E-commerce Website for La Perla Jewelry</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Description:',
+        description:
+          'Developed a user-friendly administrative dashboard for Subitt, addressing the lack of administrative functionality on the website. The dashboard effectively displayed company and customer information, streamlining administrative tasks.',
+      },
+      {
+        title: 'Role:',
+        description: `Collaborated on managing routes, data, and permissions using Trello. Researched and implemented the "Recharts" npm library to visualize business data, enabling administrators to track trends in customer and revenue metrics over time.`,
+      },
+    ]}
+    image={{
+      src: '~/assets/images/subitt.png',
+      alt: 'Art and Music Poster Image',
+    }}
+    callToAction={{
+      target: '_blank',
+      text: 'Go to the project',
+      icon: 'tabler:chevron-right',
+      href: 'https://www.subitt.io/customer/home',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Project 2: <br /><span class="text-2xl">Administrative Dashboard for Subitt</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+</Layout>
