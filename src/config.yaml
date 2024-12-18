@@ -3,22 +3,21 @@ site:
   site: 'https://abrahamjimenez.netlify.app/'
   base: '/'
   trailingSlash: false
-
-  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
+  netlifySiteId: 92e97090-8df8-4df7-8768-f48217c98c66
 
 # Default SEO metadata
 metadata:
   title:
     default: Abraham Jimenez
     template: '%s — Abraham Jimenez'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+  description: "Abraham Jimenez, web developer specializing in full-stack development. Explore projects that blend design and functionality to solve real-world challenges."
   robots:
     index: true
     follow: true
   openGraph:
     site_name: Abraham Jimenez
     images:
-      - url: '~/assets/images/default.png'
+      - url: '~/assets/images/meta.png'
         width: 1200
         height: 628
     type: website
