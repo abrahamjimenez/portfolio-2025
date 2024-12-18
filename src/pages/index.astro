@@ -105,20 +105,20 @@ const metadata = {
     items={[
       {
         title:
-          'Ecommerce Web Developer <br /> <span class="font-normal">La Perla Jewelry, Pasco, WA</span> <br /> <span class="text-sm font-normal">Oct 2021 - Present</span>',
-        description: `Updated online store inventory with accurate details for hundreds of jewelry items.
- <br /> Improved website SEO and integrated Facebook Marketplace to boost traffic.
- <br /> Balanced online store management with in-store customer service during peak hours.
-`,
-        icon: 'tabler:briefcase',
-      },
-      {
-        title:
           'Full Stack Developer <br /> <span class="font-normal">Subitt, Rexburg, ID</span> <br /> <span class="text-sm font-normal">Apr 2024 - Jul 2024</span>',
         description: `Collaborated on a Trello board to organize routes, data, and permissions for a new administrative dashboard.
 <br /> Designed a user-friendly admin dashboard to display company and customer data.
 <br /> Organized routes, data, and permissions via Trello for efficient collaboration.
 <br /> Implemented dynamic graphs using the "Recharts" npm library to visualize business trends.
+`,
+        icon: 'tabler:briefcase',
+      },
+      {
+        title:
+          'Ecommerce Web Developer <br /> <span class="font-normal">La Perla Jewelry, Pasco, WA</span> <br /> <span class="text-sm font-normal">Oct 2021 - Present</span>',
+        description: `Updated online store inventory with accurate details for hundreds of jewelry items.
+ <br /> Improved website SEO and integrated Facebook Marketplace to boost traffic.
+ <br /> Balanced online store management with in-store customer service during peak hours.
 `,
         icon: 'tabler:briefcase',
       },
@@ -212,6 +212,44 @@ const metadata = {
       {
         title: 'Description:',
         description:
+          'Developed a user-friendly administrative dashboard for Subitt, addressing the lack of administrative functionality on the website. The dashboard effectively displayed company and customer information, streamlining administrative tasks.',
+      },
+      {
+        title: 'Role:',
+        description: `Collaborated on managing routes, data, and permissions using Trello. Researched and implemented the "Recharts" npm library to visualize business data, enabling administrators to track trends in customer and revenue metrics over time.`,
+      },
+    ]}
+    image={{
+      src: '~/assets/images/subitt.png',
+      alt: 'Art and Music Poster Image',
+    }}
+    callToAction={{
+      target: '_blank',
+      text: 'Go to the project',
+      icon: 'tabler:chevron-right',
+      href: 'https://www.subitt.io/customer/home',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Project 1: <br /><span class="text-2xl">Administrative Dashboard for Subitt</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Description:',
+        description:
           "Managed the e-commerce website for Joyeria La Perla, focusing on synchronizing in-store and online inventory for jewelry items. Ensured accurate product details, stock numbers, and descriptions, enhancing the online store's reliability.",
       },
       {
@@ -233,45 +271,7 @@ const metadata = {
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 1: <br /><span class="text-2xl">E-commerce Website for La Perla Jewelry</span>
-      </h3>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    isAfterContent={true}
-    items={[
-      {
-        title: 'Description:',
-        description:
-          'Developed a user-friendly administrative dashboard for Subitt, addressing the lack of administrative functionality on the website. The dashboard effectively displayed company and customer information, streamlining administrative tasks.',
-      },
-      {
-        title: 'Role:',
-        description: `Collaborated on managing routes, data, and permissions using Trello. Researched and implemented the "Recharts" npm library to visualize business data, enabling administrators to track trends in customer and revenue metrics over time.`,
-      },
-    ]}
-    image={{
-      src: '~/assets/images/subitt.png',
-      alt: 'Art and Music Poster Image',
-    }}
-    callToAction={{
-      target: '_blank',
-      text: 'Go to the project',
-      icon: 'tabler:chevron-right',
-      href: 'https://www.subitt.io/customer/home',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 2: <br /><span class="text-2xl">Administrative Dashboard for Subitt</span>
+        Project 2: <br /><span class="text-2xl">E-commerce Website for La Perla Jewelry</span>
       </h3>
     </Fragment>
 
