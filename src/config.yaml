@@ -10,7 +10,7 @@ metadata:
   title:
     default: Abraham Jimenez
     template: '%s — Abraham Jimenez'
-  description: "Abraham Jimenez, web developer specializing in full-stack development. Explore projects that blend design and functionality to solve real-world challenges."
+  description: 'Abraham Jimenez, web developer specializing in full-stack development. Explore projects that blend design and functionality to solve real-world challenges.'
   robots:
     index: true
     follow: true
