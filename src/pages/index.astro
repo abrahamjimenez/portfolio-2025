@@ -375,7 +375,7 @@ const metadata = {
     ]}
     image={{
       src: '~/assets/images/jimenez-jewelry.webp',
-      alt: 'Abraham’s Shop Project Preview',
+      alt: 'Jimenez Jewelry Project Preview',
     }}
     callToAction={{
       target: '_blank',
@@ -395,4 +395,40 @@ const metadata = {
     </Fragment>
   </Content>
   
+  <Content
+    isReversed
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Description:',
+        description:
+          'Used Astro to display researched content about marketing, specific to SEO.',
+      },
+      {
+        title: 'Role:',
+        description:
+          'Read, implemented, and modified code to create beautiful layouts with markdown. End result is a blazing fast website.',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/marketing-blog.webp',
+      alt: 'Marketing Blog Project Preview',
+    }}
+    callToAction={{
+      target: '_blank',
+      text: 'View the project',
+      icon: 'tabler:chevron-right',
+      href: 'https://mkt-353-blog.vercel.app/blog',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Project 6: <br /><span class="text-2xl">Marketing Blog</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
 </Layout>
