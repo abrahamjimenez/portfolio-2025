@@ -250,7 +250,7 @@ const metadata = {
       {
         title: 'Description:',
         description:
-          "Managed the e-commerce website for Joyeria La Perla, focusing on synchronizing in-store and online inventory for jewelry items. Ensured accurate product details, stock numbers, and descriptions, enhancing the online store's reliability.",
+          "Managed the e-commerce website for La Perla Jewelry, focusing on synchronizing in-store and online inventory for jewelry items. Ensured accurate product details, stock numbers, and descriptions, enhancing the online store's reliability.",
       },
       {
         title: 'Role:',
@@ -498,6 +498,43 @@ const metadata = {
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
         Project 8: <br /><span class="text-2xl">English Learning App - Book of Mormon</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <Content
+    isReversed
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Description:',
+        description:
+          'Transformed paper receipts into digital ones. This interface is like the paper receipt, but this can calculate and manage prices & users.',
+      },
+      {
+        title: 'Role:',
+        description:
+          'Used react for state management, designed tables, colors, form, and used prisma + postgres for backend services.',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/joyeria-la-perla-receipts.webp',
+      alt: 'La Perla Jewelry - Digital Receipts Project Preview',
+    }}
+    callToAction={{
+      target: '_blank',
+      text: 'View the project',
+      icon: 'tabler:chevron-right',
+      href: 'https://receipts-jlp.vercel.app/receipt/payment',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Project 8: <br /><span class="text-2xl">La Perla Jewelry - Digital Receipts</span>
       </h3>
     </Fragment>
 
