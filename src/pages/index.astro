@@ -468,4 +468,41 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
+
+  <Content
+    isReversed
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Description:',
+        description:
+          'Though lackluster, built with vanilla HTML, CSS, and JavaScript, this solved a real problem. A client wanted to learn English, by reading one of their favorite books. They wished to hear a few words, have the app pause, and they would repeat what they heard.',
+      },
+      {
+        title: 'Role:',
+        description:
+          'Used JSON to gather all chapters of the Book of Mormon, & styled to appear as scripture. Filtered books, implemented ability to flip chapters, & utilized the Web Speech Api to parse text, pause, and read the scanned page content.',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/book-of-mormon.webp',
+      alt: 'English Learning App Project Preview',
+    }}
+    callToAction={{
+      target: '_blank',
+      text: 'View the project',
+      icon: 'tabler:chevron-right',
+      href: 'https://book-of-mormon-english-learning.netlify.app/',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Project 8: <br /><span class="text-2xl">English Learning App - Book of Mormon</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
 </Layout>
