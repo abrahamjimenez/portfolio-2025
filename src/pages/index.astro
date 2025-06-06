@@ -365,7 +365,7 @@ const metadata = {
       {
         title: 'Description:',
         description:
-          'Jimenez Jewelry is a real E-commerce store built with Next.js + Shopify. Account creation, wishlist options, cart management, etc.',
+          'Jimenez Jewelry is a real E-commerce store originally built with Next.js + Shopify. With my college professors recommendation, I replaced Next.js with Astro, for blazingly fast loading content. Optimized SEO for google search rankings. Features include account creation, wishlist options, cart management, etc.',
       },
       {
         title: 'Role:',
@@ -386,7 +386,7 @@ const metadata = {
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 5: <br /><span class="text-2xl">Jimenez Jewelry</span>
+        Project 5: <br /><span class="text-2xl">Jimenez Jewelry - Headless Storefront</span>
       </h3>
     </Fragment>
 
@@ -424,6 +424,43 @@ const metadata = {
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
         Project 6: <br /><span class="text-2xl">Marketing Blog</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <Content
+    isReversed
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Description:',
+        description:
+          'Although it\'s not the most beautiful site, with a timeframe of two and a half months, we were able to get the MVP for "Plums", a note taking app. CRUD applies to each page, even images.',
+      },
+      {
+        title: 'Role:',
+        description:
+          'Learned Next.js, TailwindCSS, and MongoDB implementation with these tools. First project doing this & learned a lot. Worked with another teammate who gave great feedback and suggestions. Implemented his advice.',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/plums.webp',
+      alt: 'Plums Project Preview',
+    }}
+    callToAction={{
+      target: '_blank',
+      text: 'View the project',
+      icon: 'tabler:chevron-right',
+      href: 'https://plums-ajr.vercel.app/',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Project 7: <br /><span class="text-2xl">Plums Note Taking App</span>
       </h3>
     </Fragment>
 
