@@ -31,7 +31,7 @@ const metadata = {
 
   <Hero id="hero" title="Abraham Jimenez" tagline="Full Stack Developer">
     <Fragment slot="subtitle">
-      I'm a Web Developer passionate about crafting seamless online experiences. With over 3 years of experience in
+      I'm a Web Developer passionate about crafting seamless online experiences. With over 4 years of experience in
       e-commerce development and a knack for optimizing digital solutions, I bridge the gap between business needs and
       user-centric design. From synchronizing complex inventories to building dynamic dashboards, I transform ideas into
       functional, impactful realities.
@@ -357,4 +357,42 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
+
+  <Content
+    isReversed
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Description:',
+        description:
+          'Jimenez Jewelry is a real E-commerce store built with Next.js + Shopify. Account creation, wishlist options, cart management, etc.',
+      },
+      {
+        title: 'Role:',
+        description:
+          'Built & designed the entire store. Added everything in Shopify\'s backend CMS. Fetched backend data with GraphQL to create a beautiful storefront.',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/jimenez-jewelry.webp',
+      alt: 'Abraham’s Shop Project Preview',
+    }}
+    callToAction={{
+      target: '_blank',
+      text: 'View the project',
+      icon: 'tabler:chevron-right',
+      href: 'https://jimenezjewelry.com/',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Project 5: <br /><span class="text-2xl">Jimenez Jewelry</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+  
 </Layout>
