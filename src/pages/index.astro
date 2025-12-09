@@ -106,7 +106,7 @@ const metadata = {
       },
       {
         title:
-          'Full Stack Web Developer <br /> <span class="font-normal">Subitt, Rexburg, ID</span> <br /> <span class="text-sm font-normal">Apr 2024 - Jul 2024</span>',
+          'Full Stack Web Developer <br /> <span class="font-normal">Subitt, Rexburg, ID</span> <br /> <span class="text-sm font-normal">Apr 2024 - Jul 2025</span>',
         description: `Collaborated on a Trello board to organize routes, data, and permissions for a new administrative dashboard.
 <br /> Designed a user-friendly admin dashboard to display company and customer data.
 <br /> Organized routes, data, and permissions via Trello for efficient collaboration.
@@ -199,7 +199,46 @@ const metadata = {
     id="portfolio"
     title="Building immersive web experiences"
     subtitle="Explore my web development journey, where creativity and technology intersect. Dive into my portfolio to see how I craft dynamic, user-friendly websites and applications."
-    isReversed
+    isReversed={false}
+    items={[
+      {
+        title: 'Description:',
+        description:
+          "Managed the e-commerce website for La Perla Jewelry, focusing on synchronizing in-store and online inventory for jewelry items. Ensured accurate product details, stock numbers, and descriptions, enhancing the online store's reliability.",
+      },
+      {
+        title: 'Role:',
+        description:
+          'Handled the inventory synchronization, optimized the site\'s SEO for better local reach, and integrated Facebook Marketplace to boost traffic. Assisted with customer service during peak times to ensure smooth operations.',
+      },
+    ]}
+    image={{
+      src: '~/assets/images/laperlajewelry.webp',
+      alt: 'La Perla Jewelry Logo',
+    }}
+    callToAction={{
+      target: '_blank',
+      text: 'View the website',
+      icon: 'tabler:chevron-right',
+      href: 'https://www.laperlajewelry.com/',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Project 1: <br /><span class="text-2xl">E-commerce Website for La Perla Jewelry</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed={false}
+    isAfterContent={true}
     items={[
       {
         title: 'Description:',
@@ -225,7 +264,7 @@ const metadata = {
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 1: <br /><span class="text-2xl">Jimenez Jewelry</span>
+        Project 2: <br /><span class="text-2xl">Jimenez Jewelry</span>
       </h3>
     </Fragment>
 
@@ -233,123 +272,8 @@ const metadata = {
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
-
+  
   <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    isAfterContent={true}
-    items={[
-      {
-        title: 'Description:',
-        description:
-          "Managed the e-commerce website for La Perla Jewelry, focusing on synchronizing in-store and online inventory for jewelry items. Ensured accurate product details, stock numbers, and descriptions, enhancing the online store's reliability.",
-      },
-      {
-        title: 'Role:',
-        description:
-          'Handled the inventory synchronization, optimized the site’s SEO for better local reach, and integrated Facebook Marketplace to boost traffic. Assisted with customer service during peak times to ensure smooth operations.',
-      },
-    ]}
-    image={{
-      src: '~/assets/images/laperlajewelry.webp',
-      alt: 'La Perla Jewelry Logo',
-    }}
-    callToAction={{
-      target: '_blank',
-      text: 'View the website',
-      icon: 'tabler:chevron-right',
-      href: 'https://www.laperlajewelry.com/',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 2: <br /><span class="text-2xl">E-commerce Website for La Perla Jewelry</span>
-      </h3>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    isAfterContent={true}
-    items={[
-      {
-        title: 'Description:',
-        description:
-          'Recognized with 2nd place at the BYU-I 2023 Hackathon for resolving intricate DOM bugs and employing advanced CSS troubleshooting techniques. Delivered an optimized and seamless user experience, tailored for diverse audiences, that showcased innovative design and functionality.',
-      },
-      {
-        title: 'Role:',
-        description:
-          'Led debugging efforts to resolve complex DOM issues, ensuring cross-browser compatibility and smooth functionality. Collaborated with a team to enhance user interfaces and implement creative solutions, demonstrating technical expertise and a commitment to teamwork.',
-      },
-    ]}
-    image={{
-      src: '~/assets/images/heartset.png',
-      alt: 'HeartSet Hackathon Project Preview',
-    }}
-    callToAction={{
-      target: '_blank',
-      text: 'View the project',
-      icon: 'tabler:chevron-right',
-      href: 'https://heartset.netlify.app/',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 3: <br /><span class="text-2xl">HeartSet Hackathon Project</span>
-      </h3>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <!-- Content Widget **************** -->
-
-  <Content
-    isReversed
-    isAfterContent={true}
-    items={[
-      {
-        title: 'Description:',
-        description:
-          'Developed "Abraham\'s Shop," an innovative e-commerce platform using the MERN stack. Integrated seamless PayPal functionality and secure routing to enhance the shopping experience while ensuring data safety. Delivered a dynamic and user-friendly site that meets modern e-commerce standards.',
-      },
-      {
-        title: 'Role:',
-        description:
-          'Built the platform’s core architecture, implemented robust admin capabilities, and optimized secure routes. Focused on creating a seamless payment integration and intuitive user interface, showcasing a proactive approach to full-stack web development.',
-      },
-    ]}
-    image={{
-      src: '~/assets/images/abrahams-shop.png',
-      alt: 'Abraham’s Shop Project Preview',
-    }}
-    callToAction={{
-      target: '_blank',
-      text: 'View the project',
-      icon: 'tabler:chevron-right',
-      href: 'https://proshop-ku28.onrender.com/',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 4: <br /><span class="text-2xl">Abraham’s Shop E-Commerce Platform</span>
-      </h3>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
 
   <Content
     isReversed
@@ -378,7 +302,7 @@ const metadata = {
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 5: <br /><span class="text-2xl">Administrative Dashboard for Subitt</span>
+        Project 3: <br /><span class="text-2xl">Administrative Dashboard for Subitt</span>
       </h3>
     </Fragment>
 
@@ -387,6 +311,8 @@ const metadata = {
     </Fragment>
   </Content>
 
+  <!-- Content Widget **************** -->
+  
   <Content
     isReversed
     isAfterContent={true}
@@ -414,81 +340,7 @@ const metadata = {
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 6: <br /><span class="text-2xl">Marketing Blog</span>
-      </h3>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <Content
-    isReversed
-    isAfterContent={true}
-    items={[
-      {
-        title: 'Description:',
-        description:
-          'Although it\'s not the most beautiful site, with a timeframe of two and a half months, we were able to get the MVP for "Plums", a note taking app. CRUD applies to each page, even images.',
-      },
-      {
-        title: 'Role:',
-        description:
-          'Learned Next.js, TailwindCSS, and MongoDB implementation with these tools. First project doing this & learned a lot. Worked with another teammate who gave great feedback and suggestions. Implemented his advice.',
-      },
-    ]}
-    image={{
-      src: '~/assets/images/plums.webp',
-      alt: 'Plums Project Preview',
-    }}
-    callToAction={{
-      target: '_blank',
-      text: 'View the project',
-      icon: 'tabler:chevron-right',
-      href: 'https://plums-ajr.vercel.app/',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 7: <br /><span class="text-2xl">Plums Note Taking App</span>
-      </h3>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
-  <Content
-    isReversed
-    isAfterContent={true}
-    items={[
-      {
-        title: 'Description:',
-        description:
-          'Though lackluster, built with vanilla HTML, CSS, and JavaScript, this solved a real problem. A client wanted to learn English, by reading one of their favorite books. They wished to hear a few words, have the app pause, and they would repeat what they heard.',
-      },
-      {
-        title: 'Role:',
-        description:
-          'Used JSON to gather all chapters of the Book of Mormon, & styled to appear as scripture. Filtered books, implemented ability to flip chapters, & utilized the Web Speech Api to parse text, pause, and read the scanned page content.',
-      },
-    ]}
-    image={{
-      src: '~/assets/images/book-of-mormon.webp',
-      alt: 'English Learning App Project Preview',
-    }}
-    callToAction={{
-      target: '_blank',
-      text: 'View the project',
-      icon: 'tabler:chevron-right',
-      href: 'https://book-of-mormon-english-learning.netlify.app/',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project 8: <br /><span class="text-2xl">English Learning App - Book of Mormon</span>
+        Project 4: <br /><span class="text-2xl">Marketing Blog</span>
       </h3>
     </Fragment>
 
